@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+<title>Matematika | Berat</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/foundation.min.css">
+<link rel="stylesheet" href="css/superfish.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,300' rel='stylesheet' type='text/css'>
+<script src="js/vendor/custom.modernizr.js"></script>
+<script>
+Modernizr.load({
+    // test if browser understands media queries
+    test: Modernizr.mq('only all'),
+    // if not load ie8-grid
+    nope: 'css/ie8-grid-foundation-4.css'
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie-fixes.css">
+<![endif]-->
+</head>
+<body>
+<div class="header">
+  <div class="row">
+    <div class="columns large-12">
+      <div class="row header-inner">
+        <div class="columns large-4 small-12"> <a href="index.html"><img src="images/logoo.png" alt="" class="logo"></a> </div>
+        <div class="columns large-8">
+          <nav>
+            <section>
+              <ul class="sf-menu large-12">
+                <li><a href="index.html">Beranda</a></li>
+              
+                  <li class="has-dropdown"><a class="active" href="materi.html">Materi</a>
+                  <ul class="dropdown">
+                    <li><a href="panjang.html">Pengukuran Panjang</a></li>
+                    <li><a href="berat.html">Pengukuran Berat</a></li>
+                    <li><a href="waktu.html">Pengukuran Waktu</a></li>
+                    
+                  </ul>
+                </li>
+
+                <li><a href="quiz.html">Quiz</a></li>
+              
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="columns large-12 small-top-menu">
+      <div class="row">
+        <div class="columns large-12 plr0 top-nav">
+          <form name="dropdown" class="dropdown" action="#">
+            <nav>
+              <section>
+                <select name="selected" id="target" accesskey="E" onChange="goToNewPage(document.dropdown.selected)">
+                  <option value="index.html">Beranda</option>
+                  <option class="active" value="jadwal.html">Jadwal</option>
+                  <option value="fasilitas.html">Fasilitas</option>
+               
+                </select>
+              </section>
+            </nav>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row content-wrapper">
+  <div class="columns large-12">
+    <div class="row wrapper">
+      <div class="columns large-4 content sidebar">
+        <h1 class="page-title services">Materi Pembelajaran</h1>
+        <ul>
+         <li class="bullet"><a href="panjang.html">Pengukuran Panjang</a></li>
+          <li class="bullet"><a href="berat.html">Pengukuran Berat</a></li>
+          <li class="bullet"><a href="waktu.html">Pengukuran Waktu</a></li>
+      </div>
+      <div class="columns large-8">
+        <h1 class="page-title">Pengukuran Berat</h1>
+          <div class="row">
+
+           <div class="columns large-12"><a class="thumbnail" href="images/materi1.jpg">
+            <img src="images/berat1.jpg" alt="" class="test-img"></a>
+            <img src="images/berat2.jpg" alt="" class="test-img"></a>
+             <img src="images/berat3.jpg" alt="" class="test-img"></a>
+            <img src="images/berat4.jpg" alt="" class="test-img"></a>
+             <img src="images/berat5.jpg" alt="" class="test-img"></a>
+            <img src="images/berat6.jpg" alt="" class="test-img"></a>
+            
+               
+                </div>
+                </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  
+</footer>
+<div class="credit-row">
+  <div class="row">
+    <div class="columns large-11 credit"> &copy; 2017 All rights reserved by <a href="#">KautsarFutsal.</a> Design by: <a href="http://topwebsitetemplates.org">topwebsitetemplates.org</a></div>
+    <div class="columns large-1"> <img src="images/toparrow.png" alt="" class="scrollToTop"> </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.js"></script>
+<script>
+Modernizr.load({
+    test: Modernizr.placeholder,
+    nope: 'js/placeholder.min.js'
+});
+function goToNewPage() {
+    if (document.getElementById('target').value) {
+        window.location.href = document.getElementById('target').value;
+    }
+}
+</script>
+<script>
+$(document).ready(function () {
+    $('ul.sf-menu').superfish({
+        animation: {
+            height: 'show'
+        },
+        delay: 400
+    });
+    $("img.scrollToTop").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, "slow");
+    });
+});
+</script>
+</body>
+</html>
